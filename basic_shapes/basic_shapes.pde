@@ -8,7 +8,6 @@ size(640,360);
 //Change background color to green
 background(0,255,0);
 
-
 //Greyscale goes from 0 to 255
 //Stroke color
 //stroke(127);
@@ -20,7 +19,10 @@ strokeWeight(4);
 //RGB color from 0 to 255
 stroke(0,100,150);
 fill(99,50,200);
-
+//Color Mode changes range from 255 to anything u want
+//colorMode(RGB, 100);
+//To add alpha or transparent just add third argument
+//fill(99,50,100,50);
 
 //Basic Shapes
 //Sets reference point to the center of the shape
@@ -33,5 +35,12 @@ line(320,200,520,100);
 circle(100,100,50);
 //Arg( x,y, extent) Reference point in top left corner
 square(150,150,100);
+
+//Doesnt stroke the shape 
+noStroke();
 rect(280,145,20,100);
+
+//Doesnt fill the shape (Fully transparent)
+noFill();
+stroke(127);
 ellipse(221,115,16,32);
