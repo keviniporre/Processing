@@ -11,6 +11,10 @@ void draw() {
   background(0);
   noStroke();
   fill(255);
+  
+  if (mousePressed){
+    fill(0,255,100);
+  }
   circle(x, y, 50);
 
   x = x + xspeed;
@@ -22,4 +26,5 @@ void draw() {
   if (y >= height || y <= 0) {
     yspeed = yspeed * -1;
   }
+  
 }
